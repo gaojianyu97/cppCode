@@ -12,7 +12,7 @@ public:
     ~SingleInstance(){};
 
 private:
-    SingleInstance(){ cout << "SingleInstance() 饿汉" << endl; }
+    SingleInstance(){ cout << "SingleInstance() ehan" << endl; }
     SingleInstance(const SingleInstance& other){};
     SingleInstance& operator=(const SingleInstance& other){return *this;}
 };
