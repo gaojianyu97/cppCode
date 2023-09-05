@@ -4,6 +4,7 @@
     "args": [
         "-g",
         "${file}",
+        "-lpthread",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}.exe"
     ],
@@ -35,8 +36,10 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "-lpthread",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                // "-lpthread",
             ],
             "options": {
                 "cwd": "D:/App/MinGW/bin"
